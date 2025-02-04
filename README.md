@@ -12,11 +12,17 @@ Python 3.12 or newer must be installed on the server.
 # How to Use
 
  -Open the .py file in your preferred text editor.
+ 
  -Add the full path to server.properties and the full path to the MOTD list file (e.g., "home/user/path/to/file").
+ 
  -A .txt file is preferred for storing MOTDs.
+ 
  -Each MOTD should be written on a separate line.
+ 
  -Minecraft supports most, if not all, Unicode characters.
+ 
  -You can format the MOTD directly in the .txt file or use the static part of the MOTD to do so.
+ 
 
 If running on Linux:
 Create a cron job to run the .py script and restart the server automatically.
