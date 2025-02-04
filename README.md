@@ -1,16 +1,22 @@
 # SimpleRandomMOTD
-Use this .py file on a minecraft server to update via a programed script the server MOTD randomly from a file
+Use this Python script on a Minecraft server to update the server MOTD randomly from a file via an automated script.
 
-The intended use of this code is for automating it execution via for example linux cronjobs to selectet and change either the full MOTD of a minecraft server or a small part of it leaving a predetermined "static" part to the MOTD
+# Description
+This script is designed to automate the execution of MOTD updates using tools like Linux cron jobs. It allows you to either change the entire MOTD or modify only a specific part while keeping a predefined static section.
 
-This code is intended to run natively from the server running minecraft, so in order to work, you need to have full access  to linux or other OS in the server, (in other simpler words you need to be running the server from a dedicated machine, yours or rented) if you are using a minecraft server hosting service, I don`t know if its goin to work or how it works, i sopouse that if the hosting service lets you automate python files and upload .txt or similar texts files, it should work just fine.
+This script is intended to run natively on the server hosting Minecraft. To use it, you need full access to the operating system (Linux or other). In other words, this is meant for dedicated machines, whether owned or rented. If you're using a third-party Minecraft hosting service, I can't guarantee compatibility. However, if the service allows you to automate Python scripts and upload .txt or similar files, it should work fine.
 
+# Requirements
+Python 3.12 or newer must be installed on the server.
 
- # Requieremts
- You need to have installed python 3.12 or newer to run the file
+# How to Use
 
- # How to use 
- Open the .py file with your prefered text editor, add the full path to the server.properties and the full path to the list of MOTDs (Example "home/user/path/to/file") is prerred a .txt to store the MOTDs
- Furthermore youll need to store one MOTD for each line of the file (keep in mind that minecraft supports most if not all the unicode characters) moreover if you want to format the message you can format the MOTD on the .txt file or use the static part of the MOTD tho do so.
+ -Open the .py file in your preferred text editor.
+ -Add the full path to server.properties and the full path to the MOTD list file (e.g., "home/user/path/to/file").
+ -A .txt file is preferred for storing MOTDs.
+ -Each MOTD should be written on a separate line.
+ -Minecraft supports most, if not all, Unicode characters.
+ -You can format the MOTD directly in the .txt file or use the static part of the MOTD to do so.
 
- If running on linux Create a new cronjob to run the .py file and reset the server.
+If running on Linux:
+Create a cron job to run the .py script and restart the server automatically.
